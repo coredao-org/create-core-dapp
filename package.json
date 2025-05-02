@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start"
   },
-  "author": "Akshaya",
+  "author": "Core Contributor ",
   "repository": {
     "type": "git",
     "url": "https://github.com/coredao-org/create-core-dapp"

@@ -1,26 +1,28 @@
-# create-dapp-template
+# create-dapp-template 🚀
 
 > A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit, it offers a seamless developer experience from testing and deploying smart contracts to frontend connectivity.
 
 [![npm version](https://img.shields.io/npm/v/create-dapp-template.svg)](https://www.npmjs.com/package/create-dapp-template)
 [![npm downloads](https://img.shields.io/npm/dt/create-dapp-template.svg)](https://www.npmjs.com/package/create-dapp-template)
 
-With just one simple command, get your dApp up and running on the Core network in minutes!
+## 🚀 Quick Start
+
+Spin up your DApp with just one command:
 
 ```bash
 npx create-dapp-template@latest your-dapp-name
 ```
 
-## Features
+## ✨ Features
 
-- **One-command setup** – Start building instantly
-- **Next.js 15** – Modern React-based frontend
-- **RainbowKit + Wagmi + Viem** – Wallet connection + blockchain hooks
-- **Hardhat** – Contract dev ready for Core Mainnet/Testnet
-- **Toastify** – Minimal notifications
-- **Built-in ABI sync** – Contracts auto-integrated with frontend
+- ⚡ **Next.js 15** –Fast, flexible frontend with server-side rendering.
+- 🎛️ **Wagmi + Viem** - Modern React hooks and utilities for blockchain interaction.
+- 🌈 **RainbowKit** – Pre-integrated with RainbowKit for hassle-free wallet login.
+- ✅ **Hardhat** – preconfigured for Core Mainnet and Testnet environments
+- 🔔 **React Toastify** – Built-in, minimal toast notifications for better UX
+- 📦 **Auto-synced ABIs** – No manual copying—just compile and integrate it in frontend
 
-## Prerequisites
+## 📋 Prerequisites
 
 - **Node.js:** Version 20.x or higher is recommended. You can check your version with:
   ```bash
@@ -28,7 +30,7 @@ npx create-dapp-template@latest your-dapp-name
   ```
   Download from [nodejs.org](https://nodejs.org/).
 
-## Installation
+## 📦 Installation
 
 ### Using npm (Recommended)
 
@@ -60,7 +62,7 @@ yarn install
 
 ```
 
-## Usage
+## ▶️ Usage
 
 ```bash
 # Navigate to the created dApp folder
@@ -72,7 +74,7 @@ npm run dev
 yarn dev
 ```
 
-## Configuration
+## 🔧 Configuration
 
 Create a `.env.local` file in the root directory:
 
@@ -81,7 +83,7 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id_here
 PRIVETKEY=your_private_key
 ```
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 create-dapp-template/
@@ -100,7 +102,7 @@ create-dapp-template/
 └── hardhat.config.js  # Hardhat configuration
 ```
 
-## Compile Contracts
+## 🛠️ Compile Contracts
 
 Place them in the `contracts/` folder
 
@@ -110,7 +112,7 @@ Example: Replace `Lock.sol` with your custom .sol file
 npx hardhat compile
 ```
 
-## Run Tests
+## ✅ Run Tests
 
 Place them in the `test/` folder
 
@@ -120,7 +122,7 @@ Format: `<contract-name>.test.js`
 npx hardhat test
 ```
 
-## Deploy Contracts
+## 🚀 Deploy Contracts
 
 Place your deployment scripts inside the `scripts/` directory (e.g., deploy.js).
 
@@ -132,7 +134,7 @@ npx hardhat run scripts/deploy.js --network <network_name>
 
 Replace `<network_name>` with the network you want to deploy to (e.g., `core_testnet2`)
 
-## Wallet Setup
+## 🔌 Wallet Setup
 
 ```typescript
 // src/wagmi.ts
@@ -147,7 +149,7 @@ export const config = getDefaultConfig({
 });
 ```
 
-## Running the Frontend
+## 🌐 Run the Frontend
 
 After setting up your contracts and installing dependencies, you can start the Next.js frontend development server with:
 
@@ -163,7 +165,7 @@ yarn dev
 
 This will start the application at [http://localhost:3000](http://localhost:3000) by default.
 
-## ABI Usage
+## 📁 ABI Usage
 
 After compiling your smart contracts with Hardhat, the ABI (Application Binary Interface) will be automatically copied to the `src/abi` directory by a custom Hardhat task.
 
