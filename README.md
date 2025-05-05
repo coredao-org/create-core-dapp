@@ -1,4 +1,4 @@
-# create-dapp-template 🚀
+# create-core-dapp 🚀
 
 > A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit, it offers a seamless developer experience from testing and deploying smart contracts to frontend connectivity.
 
@@ -10,7 +10,7 @@
 Spin up your DApp with just one command:
 
 ```bash
-npx create-dapp-template@latest your-dapp-name
+npx create-core-dapp your-dapp-name
 ```
 
 ## ✨ Features
@@ -35,13 +35,13 @@ npx create-dapp-template@latest your-dapp-name
 ### Using npm (Recommended)
 
 ```bash
-npx create-dapp-template@latest your-dapp-name
+npx create-core-dapp@latest your-dapp-name
 ```
 
 ### Using yarn
 
 ```bash
-yarn create dapp-template your-dapp-name
+yarn create-core-dapp your-dapp-name
 ```
 
 ### Clone manually:
@@ -50,10 +50,10 @@ You can also clone the repository and run it locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/create-dapp-template.git
+git clone https://github.com/your-username/create-core-dapp.git
 
 # Navigate to the project directory
-cd create-dapp-template
+cd create-core-dapp
 
 # Install dependencies
 npm install
