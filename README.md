@@ -177,10 +177,10 @@ After compiling your smart contracts with Hardhat, the ABI (Application Binary I
    ```typescript
    // Example usage in a React component
    import YourContractABI from '../abi/YourContract.json';
-   import { useContractRead } from 'wagmi';
+   import { useReadContract } from 'wagmi';
 
    export function YourComponent() {
-     const { data } = useContractRead({
+     const { data } = useReadContract({
        address: 'YOUR_CONTRACT_ADDRESS',
        abi: YourContractABI,
        functionName: 'yourFunction',

@@ -37,7 +37,7 @@ const TokenTransfer = () => {
       const explorerUrl = `${
         chainId === 1114
           ? "https://scan.test2.btcs.network"
-          : "https://scan.test.btcs.network"
+          : "https://scan.coredao.org/"
       }/tx/${txHash}`;
 
       toast.success(
@@ -63,9 +63,6 @@ const TokenTransfer = () => {
     if (chainId === 1114) {
       //Testnet2
       return "https://scan.test2.btcs.network/faucet";
-    } else if (chainId === 1115) {
-      //Testnet1
-      return "https://scan.test.btcs.network/faucet";
     }
     return "";
   };
@@ -98,7 +95,7 @@ const TokenTransfer = () => {
   return (
     <div className={styles.tokenTransferContainer}>
       <h2 className={styles.title}>
-        Transfer {chainId === 1114 ? "TCORE2" : "TCORE"}
+        Transfer {chainId === 1114 ? "TCORE2" : "CORE"}
       </h2>
       <div className={styles.balanceInfo}>
         Your Balance: {balance?.formatted} {balance?.symbol}
@@ -115,7 +112,7 @@ const TokenTransfer = () => {
       <div className={styles.inputGroup}>
         <input
           type="number"
-          placeholder={`Amount in ${chainId === 1114 ? "TCORE2" : "TCORE"}`}
+          placeholder={`Amount in ${chainId === 1114 ? "TCORE2" : "CORE"}`}
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
           className={styles.input}
@@ -125,10 +122,10 @@ const TokenTransfer = () => {
       </div>
       {insufficientBalance && (
         <div className={styles.errorMessage}>
-          Insufficient balance. Get {chainId === 1114 ? "TCORE2" : "TCORE"} from
+          Insufficient balance. Get {chainId === 1114 ? "TCORE2" : "CORE"} from
           the faucet:
           <a href={getFaucetLink()} target="_blank" rel="noopener noreferrer">
-            {chainId === 1114 ? "TCORE2" : "TCORE"} Faucet
+            {chainId === 1114 ? "TCORE2" : "CORE"} Faucet
           </a>
         </div>
       )}
@@ -145,11 +142,9 @@ const TokenTransfer = () => {
         }
         className={styles.transferButton}
       >
-        {chainId !== 1114 && chainId !== 1115
-          ? "Connect to Core Testnet"
-          : isTransactionPending
+        {isTransactionPending
           ? "Sending..."
-          : `Send ${chainId === 1114 ? "TCORE2" : "TCORE"}`}
+          : `Send ${chainId === 1114 ? "TCORE2" : "CORE"}`}
       </button>
     </div>
   );

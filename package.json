@@ -1,6 +1,6 @@
 {
   "name": "create-core-dapp",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit,",
   "bin": {
     "create-dapp-template": "./bin/cli.js"
