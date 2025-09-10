@@ -10,7 +10,11 @@
 Spin up your DApp with just one command:
 
 ```bash
+# Full-stack DApp (Next.js + Hardhat)
 npx create-core-dapp your-dapp-name
+
+# Hardhat-only project
+npx create-core-dapp your-dapp-name --hardhat
 ```
 
 ## ✨ Features
@@ -35,13 +39,21 @@ npx create-core-dapp your-dapp-name
 ### Using npm (Recommended)
 
 ```bash
+# Full-stack DApp
 npx create-core-dapp@latest your-dapp-name
+
+# Hardhat-only project
+npx create-core-dapp@latest your-dapp-name --hardhat
 ```
 
 ### Using yarn
 
 ```bash
+# Full-stack DApp
 yarn create-core-dapp your-dapp-name
+
+# Hardhat-only project
+yarn create-core-dapp your-dapp-name --hardhat
 ```
 
 ### Clone manually:
@@ -62,11 +74,36 @@ yarn install
 
 ```
 
+## 📋 Project Types
+
+### Full-Stack DApp (Default)
+
+Creates a complete DApp with both frontend and smart contract development capabilities:
+
+- Next.js frontend with RainbowKit wallet integration
+- Hardhat for smart contract development
+- Pre-configured for Core Mainnet and Testnet
+- Auto-synced ABIs between contracts and frontend
+
+### Hardhat-Only Project
+
+Creates a minimal project focused solely on smart contract development:
+
+- Hardhat configuration for Core networks
+- Smart contract templates and deployment scripts
+- No frontend dependencies
+- Perfect for contract-only development or when you want to use a different frontend framework
+
 ## ▶️ Usage
+
+### For Full-Stack Projects
 
 ```bash
 # Navigate to the created dApp folder
 cd your-dapp-name
+
+# Install dependencies
+npm install
 
 # Start development server
 npm run dev
@@ -74,13 +111,41 @@ npm run dev
 yarn dev
 ```
 
+### For Hardhat-Only Projects
+
+```bash
+# Navigate to the created project folder
+cd your-dapp-name
+
+# Install dependencies
+npm install
+
+# Copy environment template
+cp .env.example .env
+
+# Compile contracts
+npm run compile
+```
+
 ## 🔧 Configuration
+
+### For Full-Stack Projects
 
 Create a `.env.local` file in the root directory:
 
 ```bash
 NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id_here
 PRIVETKEY=your_private_key
+```
+
+### For Hardhat-Only Projects
+
+Copy the `.env.example` file to `.env` and fill in your values:
+
+```bash
+PRIVATEKEY=your_private_key_here
+CORE_TEST2_SCAN_KEY=your_api_key
+CORE_MAIN_SCAN_KEY=your_api_key
 ```
 
 ## 🗂️ Project Structure
