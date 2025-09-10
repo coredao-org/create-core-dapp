@@ -1,6 +1,6 @@
 {
   "name": "create-core-dapp",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit,",
   "bin": {
     "create-dapp-template": "./bin/cli.js"
@@ -25,23 +25,23 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "@rainbow-me/rainbowkit": "^2.2.4",
-    "@tanstack/react-query": "^5.55.3",
-    "chalk": "^4.1.2",
-    "figlet": "^1.8.1",
-    "next": "^15.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-toastify": "^11.0.5",
+    "@rainbow-me/rainbowkit": "2.2.4",
+    "@tanstack/react-query": "5.55.3",
+    "chalk": "4.1.2",
+    "figlet": "1.8.1",
+    "next": "15.1.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-toastify": "11.0.5",
     "viem": "2.27.2",
-    "wagmi": "^2.14.11"
+    "wagmi": "2.14.11"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@types/node": "^20.14.8",
-    "@types/react": "^19.0.6",
-    "eslint-config-next": "^15.1.7",
-    "hardhat": "^2.23.0",
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "@types/node": "20.14.8",
+    "@types/react": "19.0.6",
+    "eslint-config-next": "15.1.7",
+    "hardhat": "2.23.0",
     "typescript": "5.5.4"
   }
 }
